@@ -4,6 +4,7 @@ import styled from 'reshadow';
 const Guest = ({src, shade = 'dark', name, ...props}) => styled`
     guest {
         position: relative;
+        margin: 0;
         &[|shade='dark'] name {
             background-color: rgba(19, 20, 19, .75);
         }
@@ -38,9 +39,9 @@ const Guest = ({src, shade = 'dark', name, ...props}) => styled`
     }
 
 `(
-    <guest use:shade={shade} {...props}>
+    <guest as="figure" use:shade={shade} {...props}>
         <img src={src} alt={name} />
-        <name as="span">{name}</name>
+        <name as="figcaption">{name}</name>
     </guest>
 );
 

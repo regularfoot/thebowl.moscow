@@ -7,25 +7,41 @@ const coords = [
     37.6579999,
 ];
 
-const MyMap = () => styled`
-    wrapper {
-        width: 100%;
-    }
-`(
-    <wrapper>
-        <YMaps>
-            <div>
-                My awesome application with maps!
-                <Map
-                    defaultState={{center: coords, zoom: 16}}
-                    width=""
-                    height="300px"
-                >
-                    <Placemark defaultGeometry={coords} />
-                </Map>
-            </div>
-        </YMaps>
-    </wrapper>
-);
+const MyMap = () => {
+    const [shouldRender, onRenderChange] = React.useState(false);
+    React.useEffect(() => {
+        if (window.scrollY > 0) {
+            onRenderChange(true);
+            return;
+        }
+        window.addEventListener('scroll', () => onRenderChange(true), {once: true});
+    });
+    return styled`
+        wrapper {
+            width: 100%;
+            min-height: 300px;
+        }
+    `(
+        <wrapper>
+            {
+                shouldRender
+                    ? (
+                        <YMaps>
+                            <div>
+                                My awesome application with maps!
+                                <Map
+                                    defaultState={{center: coords, zoom: 16}}
+                                    width=""
+                                    height="300px"
+                                >
+                                    <Placemark defaultGeometry={coords} />
+                                </Map>
+                            </div>
+                        </YMaps>
+                    ) : null
+            }
+        </wrapper>
+    );
+};
 
 export default MyMap;
