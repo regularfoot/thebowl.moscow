@@ -1,11 +1,14 @@
 {
   "scripts": {
     "now-build": "next build && next export -o dist",
-    "now-dev": "next -p $PORT"
+    "now-dev": "next -p $PORT",
+    "dev": "PORT=8080 npm run now-dev"
   },
   "dependencies": {
     "next": "latest",
+    "next-images": "^1.1.1",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "reshadow": "0.0.1-alpha.62"
   }
 }

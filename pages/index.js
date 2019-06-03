@@ -1,13 +1,23 @@
 import Link from "next/link";
-import Header from "../components/header";
+import styled from 'reshadow';
+import Intro from "../components/Intro";
+import Hero from "../components/Hero";
+import Guests from "../components/Guests";
+import {skaters} from '../data';
 
-export default () => (
+export default () => styled`
+    :global(body),
+    :global(html) {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        background-color: rgb(19, 20, 19);
+    }
+`(
   <main>
-    <Header />
-    <section>
-      <Link href="/about">
-        <a>Go to About Me</a>
-      </Link>
-    </section>
+    <Intro />
+    <Hero />
+    <Guests guests={skaters} />
   </main>
 );
