@@ -9,6 +9,7 @@
     "next-images": "^1.1.1",
     "react": "latest",
     "react-dom": "latest",
+    "react-yandex-maps": "^3.0.2",
     "reshadow": "0.0.1-alpha.62"
   }
 }

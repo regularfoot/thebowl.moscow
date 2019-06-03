@@ -5,10 +5,10 @@ const Guest = ({src, shade = 'dark', name, ...props}) => styled`
     guest {
         position: relative;
         &[|shade='dark'] name {
-            background-color: rgb(19, 20, 19);
+            background-color: rgba(19, 20, 19, .75);
         }
         &[|shade='accent'] name {
-            background-color: rgb(118, 48, 119);
+            background-color: rgba(118, 48, 119, .75);
         }
         &:hover name {
             opacity: 1;
@@ -22,7 +22,9 @@ const Guest = ({src, shade = 'dark', name, ...props}) => styled`
         right: 0;
         bottom: 0;
         display: flex;
+        padding: 10px;
         align-items: center;
+        text-align: center;
         justify-content: space-around;
         transition: color .3s, background-color .3s;
         transition: all .4s ease-in-out;

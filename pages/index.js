@@ -3,6 +3,7 @@ import styled from 'reshadow';
 import Intro from "../components/Intro";
 import Hero from "../components/Hero";
 import Guests from "../components/Guests";
+import Map from "../components/Map";
 import {skaters} from '../data';
 
 export default () => styled`
@@ -19,5 +20,6 @@ export default () => styled`
     <Intro />
     <Hero />
     <Guests guests={skaters} />
+    <Map />
   </main>
 );

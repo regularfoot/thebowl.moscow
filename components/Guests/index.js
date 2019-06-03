@@ -17,7 +17,12 @@ const Guests = ({guests}) => styled`
         flex-flow: row wrap;
     }
     Guest {
-        width: 33%;
+        width: 50%;
+    }
+    @media only screen and (min-width: 500px) {
+        Guest {
+            width: 33%;
+        }
     }
 `(
     <Section shade="dark">
@@ -25,7 +30,12 @@ const Guests = ({guests}) => styled`
         <guests>
         {
             guests.map(({name}) => (
-                <Guest key={name} name={name} src="https://placehold.it/400x400"/>
+                <Guest
+                    key={name}
+                    name={name}
+                    src="https://placehold.it/400x400"
+                    shade="accent"
+                />
             ))
         }
         </guests>
