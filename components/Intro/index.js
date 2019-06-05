@@ -98,7 +98,7 @@ const Intro = () => styled`
                 <img img='логотип мероприятия' src={logo} />
             </left>
             <right>
-                <p><Text color="accent">2</Text> ИЮНЯ<br />ПАРК <Text color="accent">САДОВНИКИ</Text></p>
+                <p><Text color="accent">15</Text> ИЮНЯ<br />ПАРК <Text color="accent">САДОВНИКИ</Text></p>
                 <p><Text color="accent">СКЕЙТ</Text>МАРКЕТ<br />LIVE <Text color="accent">MUSIC</Text></p>
                 <p>СТАРТ В <Text color="accent">14:00</Text><br />ВХОД <Text color="accent">БЕСПЛАТНЫЙ</Text></p>
             </right>

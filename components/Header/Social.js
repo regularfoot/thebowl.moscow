@@ -28,12 +28,12 @@ const Social = props => styled`
 `(
     <social as="ul" {...props}>
         <li>
-            <a href="https://www.instagram.com/thebowlru/">
+            <a href="https://www.instagram.com/thebowlru/" target="_blanc">
                 <SVG src={instagram} />
             </a>
         </li>
         <li>
-            <a href="https://vk.com/thebowl">
+            <a href="https://vk.com/thebowl" target="_blanc">
                 <SVG src={vk} />
             </a>
         </li>

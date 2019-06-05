@@ -7,6 +7,7 @@ import Guests from "../components/Guests";
 import Map from "../components/Map";
 import Meta from "../components/Meta";
 import LastYearVideo from "../components/LastYearVideo";
+import WhatIsIt from "../components/WhatIsIt";
 import {skaters} from '../data';
 
 export default () => styled`
@@ -27,11 +28,12 @@ export default () => styled`
     }
 `(
   <main>
-    <Header />
     <Meta />
+    <Header />
     <Intro />
     <Hero />
     <LastYearVideo />
+    <WhatIsIt />
     <Guests guests={skaters} />
     <Map />
   </main>
