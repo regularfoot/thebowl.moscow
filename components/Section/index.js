@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'reshadow';
 
-const Section = ({Tag = 'section', shade = 'dark', children, ...props}) => styled`
+const Section = ({Tag = 'section', shade = 'dark', title, children, ...props}) => styled`
     Tag {
         width: 100%;
         &[|shade='dark'] {
@@ -18,9 +18,16 @@ const Section = ({Tag = 'section', shade = 'dark', children, ...props}) => style
         margin: 40px auto;
         color: #fff;
     }
+    title {
+        text-align: center;
+        text-transform: uppercase;
+    }
 `(
     <Tag use:shade={shade} {...props}>
-        <inner>{children}</inner>
+        <inner>
+            {title && <title as="h2">{title}</title>}
+            {children}
+        </inner>
     </Tag>
 );
 

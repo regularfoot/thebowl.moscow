@@ -9,9 +9,6 @@ const Guests = ({guests}) => styled`
         background-color: rgb(19, 20, 19);
         color: white;
     }
-    h2 {
-        text-align: center;
-    }
     guests {
         display: flex;
         flex-flow: row wrap;
@@ -21,12 +18,11 @@ const Guests = ({guests}) => styled`
     }
     @media only screen and (min-width: 500px) {
         Guest {
-            width: 33%;
+            width: 33.333333%;
         }
     }
 `(
-    <Section shade="dark">
-        <h2>ПРИГЛАШЕННЫЕ СКЕЙТ РАЙДЕРЫ</h2>
+    <Section shade="dark" title="ПРИГЛАШЕННЫЕ СКЕЙТ РАЙДЕРЫ">
         <guests>
         {
             guests.map(({name}) => (

@@ -4,6 +4,7 @@ import Intro from "../components/Intro";
 import Hero from "../components/Hero";
 import Guests from "../components/Guests";
 import Map from "../components/Map";
+import LastYearVideo from "../components/LastYearVideo";
 import {skaters} from '../data';
 
 export default () => styled`
@@ -14,11 +15,13 @@ export default () => styled`
         padding: 0;
         margin: 0;
         background-color: rgb(19, 20, 19);
+        font-family: sans-serif;
     }
 `(
   <main>
     <Intro />
     <Hero />
+    <LastYearVideo />
     <Guests guests={skaters} />
     <Map />
   </main>
