@@ -4,6 +4,7 @@ import Intro from "../components/Intro";
 import Hero from "../components/Hero";
 import Guests from "../components/Guests";
 import Map from "../components/Map";
+import Meta from "../components/Meta";
 import LastYearVideo from "../components/LastYearVideo";
 import {skaters} from '../data';
 
@@ -19,6 +20,7 @@ export default () => styled`
     }
 `(
   <main>
+    <Meta />
     <Intro />
     <Hero />
     <LastYearVideo />

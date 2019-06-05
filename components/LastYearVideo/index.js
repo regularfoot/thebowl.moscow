@@ -25,7 +25,7 @@ const LastYearVideo = () => styled`
                 src="https://player.vimeo.com/video/340422924"
                 style={{position:'absolute',top:0,left:0,border: 0,width:'100%',height:'100%'}}
                 allow="autoplay; fullscreen"
-                allowfullscreen
+                allowFullScreen
             />
         </videoWrapper>
         <script src="https://player.vimeo.com/api/player.js" />
