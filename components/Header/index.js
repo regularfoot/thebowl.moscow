@@ -13,7 +13,7 @@ const Header = () => styled`
 
     }
     Social {
-        margin-top: 20px;
+        margin-top: 10px;
     }
 
     @media only screen and (min-width: 600px) {

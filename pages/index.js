@@ -17,7 +17,13 @@ export default () => styled`
         padding: 0;
         margin: 0;
         background-color: rgb(19, 20, 19);
-        font-family: sans-serif;
+        font-family: circle-extra, sans-serif;
+    }
+
+    @font-face {
+        font-family: "circle-extra";
+        src: url("../static/font/Circe-ExtraBold.woff") format("woff"),
+             url("../static/font/Circe-ExtraBold.ttf") format("ttf");
     }
 `(
   <main>

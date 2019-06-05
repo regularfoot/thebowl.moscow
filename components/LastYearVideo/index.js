@@ -2,6 +2,11 @@ import React from 'react';
 import styled from 'reshadow';
 
 import Section from '../Section';
+import Text from '../Text';
+
+const Title = () => <span>
+    <Text color="accent">the</Text> bowl <Text color="accent">4</Text>
+</span>;
 
 const LastYearVideo = () => styled`
     intro {
@@ -19,7 +24,7 @@ const LastYearVideo = () => styled`
         position: relative;
     }
 `(
-    <Section title="TheBowl4">
+    <Section title={<Title />}>
         <videoWrapper>
             <iframe
                 src="https://player.vimeo.com/video/340422924"

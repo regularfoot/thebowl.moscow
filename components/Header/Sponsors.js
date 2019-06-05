@@ -18,7 +18,7 @@ const Sponsors = () => styled`
         & li {
             max-width: 30%;
             &[|ag] {
-                max-width: 12%;
+                max-width: 10%;
             }
             & img {
                 width: 100%;
