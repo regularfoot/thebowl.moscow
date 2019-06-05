@@ -3,6 +3,13 @@ import styled from 'reshadow';
 
 import Section from '../Section';
 import Guest from '../Guest';
+import Text from '../Text';
+
+const Title = () => (
+    <span>
+        ПРИГЛАШЕННЫЕ <Text color="accent">СКЕЙТ</Text> РАЙДЕРЫ
+    </span>
+);
 
 const Guests = ({guests}) => styled`
     Section {
@@ -17,7 +24,7 @@ const Guests = ({guests}) => styled`
         width: 50%;
     }
 `(
-    <Section shade="dark" title="ПРИГЛАШЕННЫЕ СКЕЙТ РАЙДЕРЫ">
+    <Section shade="dark" title={<Title />}>
         <guests>
         {
             guests.map(({name, img}) => (

@@ -21,6 +21,14 @@ const Section = ({Tag = 'section', shade = 'dark', title, children, ...props}) =
     title {
         text-align: center;
         text-transform: uppercase;
+        font-size: 34px;
+        margin: 16px 0;
+    }
+
+    @media only screen and (min-width: 600px) {
+        inner {
+            margin: 80px auto;
+        }
     }
 `(
     <Tag use:shade={shade} {...props}>

@@ -30,6 +30,9 @@ const Guest = ({src, shade = 'dark', name, ...props}) => styled`
         transition: color .3s, background-color .3s;
         transition: all .4s ease-in-out;
         opacity: 0;
+
+        font-size: 16px;
+        line-height: 20px;
     }
 
     img {
@@ -37,7 +40,20 @@ const Guest = ({src, shade = 'dark', name, ...props}) => styled`
         display: block;
         margin: auto;
     }
+    
+    @media only screen and (min-width: 400px) {
+        name {
+            font-size: 22px;
+            line-height: 26px;
+        }
+    }
 
+    @media only screen and (min-width: 700px) {
+        name {
+            font-size: 28px;
+            line-height: 34px;
+        }
+    }
 `(
     <guest as="figure" use:shade={shade} {...props}>
         <img src={src} alt={name} />
