@@ -16,20 +16,15 @@ const Guests = ({guests}) => styled`
     Guest {
         width: 50%;
     }
-    @media only screen and (min-width: 500px) {
-        Guest {
-            width: 33.333333%;
-        }
-    }
 `(
     <Section shade="dark" title="ПРИГЛАШЕННЫЕ СКЕЙТ РАЙДЕРЫ">
         <guests>
         {
-            guests.map(({name}) => (
+            guests.map(({name, img}) => (
                 <Guest
                     key={name}
                     name={name}
-                    src="https://placehold.it/400x400"
+                    src={img}
                     shade="accent"
                 />
             ))
