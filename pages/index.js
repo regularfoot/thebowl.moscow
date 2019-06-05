@@ -2,6 +2,7 @@ import Link from "next/link";
 import styled from 'reshadow';
 import Intro from "../components/Intro";
 import Hero from "../components/Hero";
+import Header from "../components/Header";
 import Guests from "../components/Guests";
 import Map from "../components/Map";
 import Meta from "../components/Meta";
@@ -20,6 +21,7 @@ export default () => styled`
     }
 `(
   <main>
+    <Header />
     <Meta />
     <Intro />
     <Hero />

@@ -5,10 +5,12 @@
     "dev": "PORT=8080 npm run now-dev"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.9.0",
     "next": "latest",
     "next-images": "^1.1.1",
     "react": "latest",
     "react-dom": "latest",
+    "react-inlinesvg": "^0.8.4",
     "react-yandex-maps": "^3.0.2",
     "reshadow": "0.0.1-alpha.62"
   }

@@ -18,7 +18,6 @@ const Intro = () => styled`
     }
 `(
     <Section>
-        <header>some header things</header>
         <intro>
             <left>
                 <img img='логотип мероприятия' src={logo} />
