@@ -8,6 +8,10 @@ const Meta = () => (
             name="viewport"
             content="initial-scale=1.0, width=device-width"
         />
+        <meta
+            name="description"
+            content="THEBOWL5 BMX & SKATE 15 июня в парке садовники, вход бесплатный, скейтмаркет и live music"
+        />
     </Head>
 );
 
