@@ -1,1 +1,9 @@
-{"version":2,"name":"thebowl.moscow","builds":[{"src":"package.json","use":"@now/static-build"}]}
+{
+    "version": 2,
+    "name": "thebowl.moscow",
+    "alias": "thebowl.moscow",
+    "builds": [{
+        "src": "package.json",
+        "use": "@now/static-build"
+    }]
+}
