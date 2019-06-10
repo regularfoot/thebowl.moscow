@@ -33,7 +33,6 @@ const LastYearVideo = () => styled`
                 allowFullScreen
             />
         </videoWrapper>
-        <script src="https://player.vimeo.com/api/player.js" />
     </Section>
 );
 
