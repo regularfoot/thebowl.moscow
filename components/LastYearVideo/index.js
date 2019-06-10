@@ -31,6 +31,7 @@ const LastYearVideo = () => styled`
                 style={{position:'absolute',top:0,left:0,border: 0,width:'100%',height:'100%'}}
                 allow="autoplay; fullscreen"
                 allowFullScreen
+                title="видео отчет the bowl 4"
             />
         </videoWrapper>
     </Section>

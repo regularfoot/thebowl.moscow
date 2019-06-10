@@ -41,13 +41,13 @@ const Sponsors = () => styled`
 `(
     <sponsors as="ul">
         <li>
-            <img src={fedImg} />
+            <img src={fedImg} alt="Логотип российской федерации скейтбординга" />
         </li>
         <li use:ag>
-            <img src={projectAgImg} />
+            <img src={projectAgImg} alt="Логотип project ag" />
         </li>
         <li>
-            <img src={sportsDepImg} />
+            <img src={sportsDepImg} alt="Логотип департамента спорта и туризма Москвы" />
         </li>
     </sponsors>
 );

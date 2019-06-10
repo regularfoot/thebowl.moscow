@@ -95,7 +95,7 @@ const Intro = () => styled`
     <Section>
         <intro>
             <left>
-                <img img='логотип мероприятия' src={logo} />
+                <img alt='логотип мероприятия' src={logo} />
             </left>
             <right>
                 <p><Text color="accent">15</Text> ИЮНЯ<br />ПАРК <Text color="accent">САДОВНИКИ</Text></p>
