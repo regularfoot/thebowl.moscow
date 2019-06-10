@@ -5,34 +5,35 @@ import goshanImg from './static/skaters/goshan.jpg';
 
 export const schedule = [
     {
-        time: '14:00',
+        time: '13:40',
+        label: 'Лучший трюк Скейт',
+    },
+    {
+        time: '14:40',
         label: 'Live Music',
     },
     {
-        time: '14:35',
-        label: 'Полуфинал скейт',
-    },
-    {
-        time: '15:20',
-        label: 'Соревнования BMX',
-    },
-    {
-        time: '15:45',
-        label: 'Live Music',
-    },
-    {
-        time: '16:25',
+        time: '15:00',
         label: 'Финал Скейт',
     },
     {
-        time: '17:05',
-        label: 'Лучший Трюк Скейт',
+        time: '15:40',
+        label: 'BMX Финал',
     },
     {
-        time: '17:45',
-        label: 'Церемония Награждения',
+        time: '16:50',
+        label: 'BMX Лучший трюк',
+    },
+    {
+        time: '17:25',
+        label: 'Награждения',
     },
 ];
+
+export const marketTimting = {
+    time: '12:00 - 18:00',
+    label: 'Skate Market',
+};
 
 export const skaters = [
     {

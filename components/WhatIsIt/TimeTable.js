@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'reshadow';
 
-import {schedule} from '../../data.js';
+import {schedule, marketTimting} from '../../data.js';
 import Text from '../Text';
 
 const TimeTable = props => styled`
@@ -33,6 +33,10 @@ const TimeTable = props => styled`
     <wrapper {...props}>
         <h2>РАСПИСАНИЕ</h2>
         <ul>
+            <li>
+                <timeslot><Text color="accent">{marketTimting.time}</Text></timeslot>
+                <timename>{marketTimting.label}</timename>
+            </li>
             {
                 schedule.map(
                     ({time,label}) => (
