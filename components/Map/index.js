@@ -28,7 +28,6 @@ const MyMap = () => {
                     ? (
                         <YMaps>
                             <div>
-                                My awesome application with maps!
                                 <Map
                                     defaultState={{center: coords, zoom: 16}}
                                     width=""
