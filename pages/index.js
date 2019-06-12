@@ -8,7 +8,7 @@ import Map from "../components/Map";
 import Meta from "../components/Meta";
 import LastYearVideo from "../components/LastYearVideo";
 import WhatIsIt from "../components/WhatIsIt";
-import {skaters} from '../data';
+import {skaters, bmxers} from '../data';
 
 export default () => styled`
     :global(body),
@@ -34,7 +34,8 @@ export default () => styled`
     <Hero />
     <LastYearVideo />
     <WhatIsIt />
-    <Guests guests={skaters} />
+    <Guests guests={skaters} title="СКЕЙТ" />
+    <Guests guests={bmxers} title="BMX" />
     <Map />
   </main>
 );

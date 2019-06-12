@@ -5,13 +5,13 @@ import Section from '../Section';
 import Guest from '../Guest';
 import Text from '../Text';
 
-const Title = () => (
+const Title = ({title}) => (
     <span>
-        ПРИГЛАШЕННЫЕ <Text color="accent">СКЕЙТ</Text> РАЙДЕРЫ
+        ПРИГЛАШЕННЫЕ <Text color="accent">{title}</Text> РАЙДЕРЫ
     </span>
 );
 
-const Guests = ({guests}) => styled`
+const Guests = ({guests, title}) => styled`
     Section {
         background-color: rgb(19, 20, 19);
         color: white;
@@ -24,7 +24,7 @@ const Guests = ({guests}) => styled`
         width: 50%;
     }
 `(
-    <Section shade="dark" title={<Title />}>
+    <Section shade="dark" title={<Title title={title} />}>
         <guests>
         {
             guests.map(({name, img}) => (
