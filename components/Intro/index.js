@@ -17,7 +17,7 @@ const Intro = () => styled`
     right {
         margin-left: 0;
         padding-top: 14px;
-        font-size: 28px;
+        font-size: 26px;
         line-height: 32px;
     }
     p {
@@ -33,8 +33,14 @@ const Intro = () => styled`
         right {
             margin-left: 0;
             padding-top: 14px;
-            font-size: 32px;
-            line-height: 32px;
+            font-size: 33px;
+            line-height: 40px;
+        }
+    }
+    @media only screen and (min-width: 500px) {
+        right {
+            font-size: 42px;
+            line-height: 48px;
         }
     }
     @media only screen and (min-width: 600px) {
@@ -49,7 +55,7 @@ const Intro = () => styled`
         right {
             margin-left: 8px;
             padding-top: 33px;
-            font-size: 18px;
+            font-size: 16px;
             line-height: 20px;
             margin-right: auto;
         }
@@ -87,7 +93,7 @@ const Intro = () => styled`
         right {
             margin-left: 18px;
             padding-top: 59px;
-            font-size: 34px;
+            font-size: 31px;
             line-height: 34px;
         }
     }
@@ -99,7 +105,7 @@ const Intro = () => styled`
             </left>
             <right>
                 <p><Text color="accent">15</Text> ИЮНЯ<br />ПАРК <Text color="accent">САДОВНИКИ</Text></p>
-                <p><Text color="accent">СКЕЙТ</Text>МАРКЕТ<br />LIVE <Text color="accent">MUSIC</Text></p>
+                <p>СКЕЙТ&BMX <Text color="accent">МАРКЕТ</Text><br />LIVE <Text color="accent">MUSIC</Text></p>
                 <p>СТАРТ В <Text color="accent">14:00</Text><br />ВХОД <Text color="accent">БЕСПЛАТНЫЙ</Text></p>
             </right>
         </intro>
