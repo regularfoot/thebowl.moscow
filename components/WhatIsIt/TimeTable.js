@@ -29,6 +29,9 @@ const TimeTable = props => styled`
         line-height: 36px;
     }
 
+    timeslot {
+        font-variant-numeric: tabular-nums;
+    }
 `(
     <wrapper {...props}>
         <h2>РАСПИСАНИЕ</h2>
@@ -50,7 +53,7 @@ const TimeTable = props => styled`
         </ul>
 
         <p><Text color="accent">15</Text> ИЮНЯ<br />ПАРК <Text color="accent">САДОВНИКИ</Text></p>
-        <p>СТАРТ В <Text color="accent">14:00</Text><br />ВХОД <Text color="accent">БЕСПЛАТНЫЙ</Text></p>
+        <p>СТАРТ В <Text color="accent">13:40</Text><br />ВХОД <Text color="accent">БЕСПЛАТНЫЙ</Text></p>
 
     </wrapper>
 );
