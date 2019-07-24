@@ -5,22 +5,9 @@ import Section from '../Section';
 import Desc from './Desc';
 import TimeTable from './TimeTable';
 
-const WhatIsIt = () => styled`
-    Section {
-        display: flex;
-        flex-flow: column nowrap;
-    }
-    @media only screen and (min-width: 800px) {
-        Section {
-            flex-flow: row nowrap;
+import styles from './styles.css';
 
-            & TimeTable {
-                min-width: 300px;
-                margin-left: 28px;
-            }
-        }
-    }
-`(
+const WhatIsIt = () => styled(styles)(
     <Section>
         <Desc />
         <TimeTable />

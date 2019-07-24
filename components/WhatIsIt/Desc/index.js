@@ -1,20 +1,10 @@
 import React from 'react';
 import styled from 'reshadow';
-import Text from '../Text';
+import Text from '../../Text';
 
-const Desc = () => styled`
-    h2 {
-        font-size: 34px;
-    }
-    hashtag {
-        color: #fff;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-size: 28px;
-        margin-top: 24px;
-        display: block;
-    }
-`(
+import styles from './style.css';
+
+const Desc = () => styled(styles)(
     <wrapper>
         <h2>ЧТО ТАКОЕ THE BOWL</h2>
         <desc>

@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'reshadow';
 import {YMaps, Map, Placemark} from 'react-yandex-maps';
 
+import styles from './style.css';
+
 const coords = [
     55.6665904,
     37.6579999,
@@ -16,12 +18,7 @@ const MyMap = () => {
         }
         window.addEventListener('scroll', () => onRenderChange(true), {once: true});
     });
-    return styled`
-        wrapper {
-            width: 100%;
-            min-height: 300px;
-        }
-    `(
+    return styled(styles)(
         <wrapper>
             {
                 shouldRender
