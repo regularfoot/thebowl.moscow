@@ -4,24 +4,11 @@ import Modal from '../Modal';
 
 import Section from '../Section';
 
+import styles from './style.css';
+
 const Reglament = () => {
     const [isModalOpen, setOpen] = React.useState(false);
-    return styled`
-        h3 {
-            margin-top: 0;
-            font-size: 1.25em;
-        }
-        openReglament {
-            background-color: transparent;
-            padding: 0;
-            display: inline;
-            color: inherit;
-            font-size: inherit;
-            line-height: inherit;
-            font-weight: inherit;
-            border: 0;
-        }
-    `(
+    return styled(styles)(
         <Section title={
             <openReglament as="button" onClick={() => setOpen(true)}>Посмотреть Регламент</openReglament>
         }>

@@ -1,38 +1,12 @@
 import React from 'react';
 import styled from 'reshadow';
 
-import {schedule, marketTimting} from '../../data.js';
-import Text from '../Text';
+import {schedule, marketTimting} from '../../../data.js';
+import Text from '../../Text';
 
-const TimeTable = props => styled`
-    h2 {
-        font-size: 35px;
-    }
-    ul {
-        padding: 0;
-        margin: 0;
-        list-style: none;
+import styles from './style.css';
 
-        & li {
-            display: flex;
-            font-size: 18px;
-            line-height: 24px;
-
-            & timeslot {
-                margin-right: 20px;
-            }
-        }
-    }
-
-    p {
-        font-size: 28px;
-        line-height: 36px;
-    }
-
-    timeslot {
-        font-variant-numeric: tabular-nums;
-    }
-`(
+const TimeTable = props => styled(styles)(
     <wrapper {...props}>
         <h2>РАСПИСАНИЕ</h2>
         <ul>

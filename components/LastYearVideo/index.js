@@ -4,26 +4,13 @@ import styled from 'reshadow';
 import Section from '../Section';
 import Text from '../Text';
 
+import styles from './style.css';
+
 const Title = () => <span>
     <Text color="accent">the</Text> bowl <Text color="accent">4</Text>
 </span>;
 
-const LastYearVideo = () => styled`
-    intro {
-        display: flex;
-        flex-flow: nowrap row;
-    }
-    left {
-        width: 66%;
-    }
-    img {
-        max-width: 100%;
-    }
-    videoWrapper {
-        padding: 56.25% 0 0 0;
-        position: relative;
-    }
-`(
+const LastYearVideo = () => styled(styles)(
     <Section title={<Title />}>
         <videoWrapper>
             <iframe

@@ -1,0 +1,11 @@
+span {
+    &[|color="accent"] {
+        color: #853286; 
+    }
+    &[|color="dark"] {
+        color: #131413; 
+    }
+    &[|color="light"] {
+        color: #fff; 
+    }
+}

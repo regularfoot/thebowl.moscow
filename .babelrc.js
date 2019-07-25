@@ -1,11 +1,11 @@
 module.exports = {
-  "presets": [
-    "next/babel"
-  ],
-  "plugins": [
-    [
-      "reshadow/babel",
-      {"files": "\\.css$"}
+    presets: [
+        'next/babel'
+    ],
+    plugins: [
+        [
+            'reshadow/babel',
+            {postcss: true}
+        ]
     ]
-  ]
 }
