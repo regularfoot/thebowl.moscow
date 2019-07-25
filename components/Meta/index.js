@@ -12,6 +12,23 @@ const Meta = () => (
             name="description"
             content="THEBOWL5 BMX & SKATE 15 июня в парке садовники, вход бесплатный, скейтмаркет и live music"
         />
+        <style>{`
+        body,
+        html {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+            background-color: rgb(19, 20, 19);
+            font-family: circle-extra, sans-serif;
+        }
+        @font-face {
+            font-family: "circle-extra";
+            src: url("../static/font/Circe-ExtraBold.woff") format("woff"),
+                  url("../static/font/Circe-ExtraBold.ttf") format("ttf");
+        }
+
+            `}</style>
     </Head>
 );
 

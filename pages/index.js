@@ -11,23 +11,7 @@ import WhatIsIt from "../components/WhatIsIt";
 import Reglament from '../components/Reglament';
 import {skaters, bmxers} from '../data';
 
-export default () => styled`
-    :global(body),
-    :global(html) {
-        width: 100%;
-        height: 100%;
-        padding: 0;
-        margin: 0;
-        background-color: rgb(19, 20, 19);
-        font-family: circle-extra, sans-serif;
-    }
-
-    @font-face {
-        font-family: "circle-extra";
-        src: url("../static/font/Circe-ExtraBold.woff") format("woff"),
-             url("../static/font/Circe-ExtraBold.ttf") format("ttf");
-    }
-`(
+export default () => (
   <main>
     <Meta />
     <Header />
