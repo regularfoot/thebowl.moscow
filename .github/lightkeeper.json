@@ -1,5 +1,12 @@
 {
   "baseUrl": "{target_url}",
   "ci": "now",
-  "type": "deployment"
+  "type": "deployment",
+  "settings": {
+    "categories": {
+      "performance": 70,
+      "accessibility": 70,
+      "best-practices": 70
+    }
+  }
 }
