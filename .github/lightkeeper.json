@@ -1,5 +1,5 @@
 {
-  "baseUrl": "{target_url}",
+  "baseUrl": "https://thebowlmoscow-git-{branch}.antonk52.now.sh/",
   "ci": "now",
   "type": "deployment",
   "settings": {
