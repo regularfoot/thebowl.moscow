@@ -22,9 +22,13 @@ const Meta = () => (
             background-color: rgb(19, 20, 19);
             font-family: circle-extra, sans-serif;
         }
+        header + section {
+            color: #fff;
+        }
         @font-face {
             font-family: "circle-extra";
-            src: url("../static/font/Circe-ExtraBold.woff") format("woff"),
+            src: url("../static/font/Circe-ExtraBold.woff2") format("woff2"),
+                  url("../static/font/Circe-ExtraBold.woff") format("woff"),
                   url("../static/font/Circe-ExtraBold.ttf") format("ttf");
         }
 

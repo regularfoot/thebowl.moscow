@@ -21,7 +21,7 @@ const Guests = ({guests, title}) => styled(styles)(
                 <Guest
                     key={name}
                     name={name}
-                    src={img}
+                    img={img}
                     shade="accent"
                 />
             ))

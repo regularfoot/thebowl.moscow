@@ -1,7 +1,7 @@
-import dimaImg from './static/skaters/dima.jpg';
-import davidImg from './static/skaters/david.jpg';
-import filnImg from './static/skaters/flin.jpg';
-import goshanImg from './static/skaters/goshan.jpg';
+import dimaImg from './static/skaters/dima.jpg?resize&sizes[]=200&sizes[]=250&sizes[]=300&sizes[]=350&sizes[]=450';
+import davidImg from './static/skaters/david.jpg?resize&sizes[]=200&sizes[]=250&sizes[]=300&sizes[]=350&sizes[]=450';
+import filnImg from './static/skaters/flin.jpg?resize&sizes[]=200&sizes[]=250&sizes[]=300&sizes[]=350&sizes[]=450';
+import goshanImg from './static/skaters/goshan.jpg?resize&sizes[]=200&sizes[]=250&sizes[]=300&sizes[]=350&sizes[]=450';
 
 export const schedule = [
     {
@@ -61,43 +61,43 @@ export const skaters = [
 export const bmxers = [
     {
         name: 'Михаил Королев',
-        img: require('./static/bmxers/michael-korolev.jpg'),
+        img: require('./static/bmxers/michael-korolev.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Илья Хвайницкий',
-        img: require('./static/bmxers/ilya.jpg'),
+        img: require('./static/bmxers/ilya.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Сергей Тырнов',
-        img: require('./static/bmxers/sergey-turnov.jpg'),
+        img: require('./static/bmxers/sergey-turnov.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Вениамин Ромашев',
-        img: require('./static/bmxers/veniamin.jpg'),
+        img: require('./static/bmxers/veniamin.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Андрей Гордеев',
-        img: require('./static/bmxers/andrey.jpg'),
+        img: require('./static/bmxers/andrey.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Алексей Степанов',
-        img: require('./static/bmxers/alexey.jpg'),
+        img: require('./static/bmxers/alexey.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Сергей Супонин',
-        img: require('./static/bmxers/sergeey-suponin.jpg'),
+        img: require('./static/bmxers/sergeey-suponin.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Никита Паустьян',
-        img: require('./static/bmxers/nikita.jpg'),
+        img: require('./static/bmxers/nikita.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Макс Чуприна',
-        img: require('./static/bmxers/max-chuprina.jpg'),
+        img: require('./static/bmxers/max-chuprina.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
     {
         name: 'Рафаэль Сулейманов',
-        img: require('./static/bmxers/raphael.jpg'),
+        img: require('./static/bmxers/raphael.jpg?resize&sizes[]=200.jpgsizes[]=250.jpgsizes[]=300.jpgsizes[]=350.jpgsizes[]=450'),
     },
 ];
 

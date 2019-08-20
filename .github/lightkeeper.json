@@ -1,0 +1,47 @@
+{
+  "baseUrl": "https://thebowlmoscow-git-{branch}.antonk52.now.sh/",
+  "ci": "now",
+  "type": "deployment",
+  "settings": {
+    "categories": {
+      "performance": 85,
+      "accessibility": 90,
+      "best-practices": 80
+    },
+    "budgets": [
+      {
+        "resourceSizes": [
+          {
+            "resourceType": "script",
+            "budget": 250
+          },
+          {
+            "resourceType": "image",
+            "budget": 300
+          },
+          {
+            "resourceType": "third-party",
+            "budget": 350
+          },
+          {
+            "resourceType": "total",
+            "budget": 1000
+          }
+        ],
+        "resourceCounts": [
+          {
+            "resourceType": "third-party",
+            "budget": 50
+          },
+          {
+            "resourceType": "total",
+            "budget": 50
+          }
+        ]
+      }
+    ]
+  },
+  "routes": [
+    "/"
+  ]
+}
