@@ -1,13 +1,13 @@
 import React from 'react';
 import styled from 'reshadow';
-import {YMaps, Map, Placemark} from 'react-yandex-maps';
+import dynamic from 'next/dynamic';
 
 import styles from './style.css';
 
-const coords = [
-    55.6665904,
-    37.6579999,
-];
+const YMap = dynamic({
+    loader: () => import('./YandexMap'),
+    ssr: false,
+});
 
 const MyMap = () => {
     const [shouldRender, onRenderChange] = React.useState(false);
@@ -16,25 +16,14 @@ const MyMap = () => {
             onRenderChange(true);
             return;
         }
-        window.addEventListener('scroll', () => onRenderChange(true), {once: true});
+        window.addEventListener('scroll', () => onRenderChange(true), {
+            once: true,
+        });
     });
     return styled(styles)(
         <wrapper>
             {
-                shouldRender
-                    ? (
-                        <YMaps>
-                            <div>
-                                <Map
-                                    defaultState={{center: coords, zoom: 16}}
-                                    width=""
-                                    height="300px"
-                                >
-                                    <Placemark defaultGeometry={coords} />
-                                </Map>
-                            </div>
-                        </YMaps>
-                    ) : null
+                shouldRender ? <YMap /> : null
             }
         </wrapper>
     );
