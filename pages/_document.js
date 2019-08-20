@@ -11,7 +11,9 @@ class MyDocument extends Document {
     render() {
         return (
             <Html lang="ru">
-                <Head />
+                <Head>
+                    <link rel="preconnect" href="https://mc.yandex.ru" />
+                </Head>
                 <body>
                     <Main />
                     <NextScript />
