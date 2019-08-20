@@ -4,7 +4,7 @@
   "type": "deployment",
   "settings": {
     "categories": {
-      "performance": 80,
+      "performance": 85,
       "accessibility": 90,
       "best-practices": 80
     },
@@ -13,15 +13,15 @@
         "resourceSizes": [
           {
             "resourceType": "script",
-            "budget": 300
+            "budget": 250
           },
           {
             "resourceType": "image",
-            "budget": 100
+            "budget": 300
           },
           {
             "resourceType": "third-party",
-            "budget": 200
+            "budget": 350
           },
           {
             "resourceType": "total",
