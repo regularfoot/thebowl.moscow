@@ -2,18 +2,18 @@ sponsors {
     width: 100%;
     list-style: none;
     padding: 0;
-    margin: 10px 0 0;
+    margin: 10px 0 15px;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: space-around;
     & li {
-        max-width: 30%;
+        max-height: 30px;
         &[|ag] {
             max-width: 10%;
         }
         & img {
-            width: 100%;
+            height: 30px;
         }
     }
     & li + li {

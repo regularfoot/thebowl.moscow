@@ -7,7 +7,7 @@ import Text from '../Text';
 import styles from './style.css';
 
 const Title = () => <span>
-    <Text color="accent">the</Text> bowl <Text color="accent">4</Text>
+    <Text color="accent">the</Text> bowl <Text color="accent">5</Text>
 </span>;
 
 const LastYearVideo = () => {
@@ -28,13 +28,11 @@ const LastYearVideo = () => {
                 {
                     shouldRender
                         ? (
-                            <iframe
-                                src="https://player.vimeo.com/video/340422924"
-                                style={{position:'absolute',top:0,left:0,border: 0,width:'100%',height:'100%'}}
-                                allow="autoplay; fullscreen"
-                                allowFullScreen
-                                title="видео отчет the bowl 4"
-                            />
+                            <iframe src="https://vk.com/video_ext.php?oid=-55525418&id=456239060&hash=4c41ada7b1b65932&hd=2"
+                                    width="853" height="480"
+                                    title="видео отчет the bowl 5"
+                                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture;" frameBorder="0"
+                                    allowFullScreen/>
                         ) : null
                 }
             </videoWrapper>
